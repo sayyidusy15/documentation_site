@@ -18,6 +18,10 @@ export const Documents: Paths[] = [
         title: "Changelog",
         href: "/changelog",
       },
+      {
+        title: "Testing",
+        href: "/testing",
+      },
     ],
   },
   {
@@ -43,6 +47,12 @@ export const Documents: Paths[] = [
               {
                 title: "Even deeper",
                 href: "/even-deeper",
+                items: [
+                  {
+                    title: "Even even deeper",
+                    href: "/even-even-deeper",
+                  }
+                ]
               },
             ],
           },
