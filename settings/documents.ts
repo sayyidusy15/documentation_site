@@ -64,6 +64,23 @@ export const Documents: Paths[] = [
     spacer: true,
   },
   {
+    title: "Bandit",
+    href: "/bandit",
+    heading: "Over the wire",
+    items: [
+      {
+        title: "Level 0",
+        href: "/level0",
+        items : [
+          {
+            title: "SSH",
+            href: "/ssh",
+          }
+        ]
+      },
+    ],
+  },
+  {
     title: "Markdown",
     href: "/markdown",
     heading: "Components",
