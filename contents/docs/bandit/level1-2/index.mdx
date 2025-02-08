@@ -4,6 +4,48 @@ description: Tutorial dan penyelesaian untuk OverTheWire Bandit Level 1 → Leve
 keywords: ["overthewire", "bandit", "level0-1", "ctf", "tutorial", "linux", "readme"]
 ---
 
-##Tujuan: Menemukan password untuk level selanjutnya 
+## Tujuan: Menemukan password untuk level selanjutnya 
 yang tersimpan dalam file bernama - (tanda minus/dash).
 
+ini sedikit lebih menantang karena:
+
+- File bernama **-** adalah file spesial di Linux
+- Anda tidak bisa langsung menggunakan **cat -**
+- Ini mengajarkan tentang cara menangani file dengan nama yang spesial
+
+
+<Step>
+<StepItem>
+Login ke bandit1 (gunakan password yang Anda dapatkan dari level sebelumnya)
+</StepItem>
+
+<StepItem>
+Gunakan **ls** untuk melihat file bernama **-**
+</StepItem>
+
+<StepItem>
+Untuk membaca file ini, Anda perlu menggunakan salah satu cara berikut:
+
+```bash
+cat ./-     # Cara 1: Menggunakan path relatif
+cat < -     # Cara 2: Menggunakan input redirection
+cat $(pwd)/-    # Cara 3: Menggunakan path absolut
+```
+</StepItem>
+
+</Step>
+
+## TIPS
+
+- File yang dimulai dengan - dianggap sebagai option/flag oleh command line
+- Untuk mengakses file seperti ini, kita perlu menspesifikkan pathnya
+- Ini adalah konsep penting dalam Linux security awareness
+
+## Setelah Anda mendapatkan passwordnya, Anda bisa:
+
+Keluar dengan perintah exit atau CTRL+D
+Login ke level selanjutnya dengan:
+
+```bash
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+```
