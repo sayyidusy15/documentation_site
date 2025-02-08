@@ -7,5 +7,61 @@ keywords: ["overthewire", "bandit", "level2-3", "ctf", "tutorial", "linux", "spa
 ## Bandit Level 2 → Level 3
 
 
+Level ini mengajarkan tentang cara menangani file yang memiliki spasi dalam namanya di Linux. Ini adalah situasi umum yang sering ditemui dalam administrasi sistem.
+
+## Informasi Level
+
+<Step>
+    <StepItem title="Kredensial">
+    - **Host**: bandit.labs.overthewire.org
+    - **Port**: 2220
+    - **Username**: bandit2
+    - **Password**: _(menggunakan password dari level sebelumnya)_
+    </StepItem>
+
+    <StepItem title="Tujuan">
+    Password untuk level selanjutnya tersimpan dalam file bernama `spaces in this filename` yang terletak di home directory.
+    </StepItem>
+</Step>
+
+
+## Langkah Penyelesaian
+
+<Step>
+
+    <StepItem title="1. Koneksi SSH">
+        Hubungkan ke server menggunakan SSH:
+
+        ```bash
+        ssh bandit2@bandit.labs.overthewire.org -p 2220
+        ```
+        Masukkan password yang didapat dari level sebelumnya. 
+    </StepItem>
+
+
+    <StepItem title="2. Melihat Isi Direktori"> 
+        Gunakan perintah `ls` untuk melihat isi direktori:
+
+        ```bash
+        ls
+        ```
+        Anda akan melihat file dengan nama: spaces in this filename 
+    </StepItem>
+
+    <StepItem title="3. Membaca Isi File"> 
+        Ada beberapa metode untuk membaca file yang memiliki spasi dalam namanya:
+        - Menggunakan tanda kutip (quotes):
+
+        ```bash
+        cat "spaces in this filename"
+        cat spaces\ in\ this\ filename
+        ```
+
+
+        Password untuk level selanjutnya akan muncul setelah menjalankan salah satu perintah di atas. 
+    </StepItem> 
+
+</Step>
+
 
 
