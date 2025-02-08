@@ -1,0 +1,49 @@
+---
+title: Bandit Level 0 → Level 1
+description: Tutorial dan penyelesaian untuk OverTheWire Bandit Level 0 → Level 1
+keywords: ["overthewire", "bandit", "level0-1", "ctf", "tutorial", "linux", "readme"]
+---
+
+## Bandit Level 0 → Level 1
+
+Level ini mengajarkan tentang perintah dasar Linux untuk membaca file. Anda akan belajar menggunakan perintah `ls` untuk melihat isi direktori dan `cat` untuk membaca isi file.
+
+## Informasi Level
+
+<Step>
+<StepItem title="Kredensial">
+Tujuan: Menemukan password untuk level selanjutnya (Level 1) yang tersimpan dalam sebuah file bernama readme di home directory.
+
+Langkah-langkah yang bisa dilakukan:
+
+- Setelah login sebagai bandit0, Anda berada di home directory
+- Gunakan perintah ls untuk melihat isi directory
+- Anda akan melihat file bernama readme
+- Gunakan perintah cat readme untuk membaca isi file tersebut
+- Password yang Anda temukan dalam file tersebut adalah password untuk Level 1
+
+</StepItem>
+
+<StepItem title="Perintah yang dibutuhkan ">
+
+```bash
+ls      # untuk melihat isi directory
+cat readme    # untuk membaca isi file readme
+```
+
+</StepItem>
+
+<StepItem title="setelah dapat password nya">
+
+- Kamu bisa keluar (logout) dengan perintah exit atau **CTRL+D** , kemudian login ke **Level 1** dengan:
+```bash
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+```
+</StepItem>
+
+</Step>
+
+
+
+
+

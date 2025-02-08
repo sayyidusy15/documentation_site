@@ -79,8 +79,12 @@ export const Documents: Paths[] = [
         ]
       },
       {
-        title: "Level 1",
-        href: "/level1",
+        title: "Level 0 - 1",
+        href: "/level0-1",
+      },
+      {
+        title: "Level 1 - 2",
+        href: "/level1-2",
       },
     ],
   },
