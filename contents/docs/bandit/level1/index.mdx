@@ -1,0 +1,30 @@
+---
+title: SSH (Secure Shell)
+description: Pemahaman dasar tentang SSH, cara penggunaan, dan implementasi untuk koneksi lokal
+keywords: ["ssh", "secure shell", "remote access", "network", "security"]
+---
+
+## Apa itu SSH?
+
+SSH (Secure Shell) adalah protokol jaringan kriptografi yang memungkinkan pengguna untuk mengakses, mengendalikan, dan memodifikasi server mereka secara aman melalui internet. SSH dirancang sebagai pengganti yang aman untuk protokol shell yang tidak terenkripsi seperti Telnet.
+
+SSH bisa dijalankan di **terminal** atau di **command prompt**
+
+## Cara Kerja SSH
+
+SSH bekerja dengan model client-server:
+- **SSH Client**: Program yang Anda gunakan untuk melakukan koneksi
+- **SSH Server**: Program yang berjalan di komputer tujuan yang menerima koneksi
+
+SSH mengenkripsi semua data yang dikirimkan antara client dan server, melindungi dari:
+- Pencurian password
+- Man-in-the-middle attacks
+- IP spoofing
+- Manipulasi data
+
+
+
+## Syntax Dasar SSH
+
+```bash
+ssh [options] [username@]hostname [command]

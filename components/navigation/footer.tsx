@@ -10,7 +10,7 @@ export function Footer() {
         <p className="text-center">
           &copy; {new Date().getFullYear()}{" "}
           <Link className="font-semibold" href={Company.link}>
-            {Company.name}
+            Sayyidusy S A
           </Link>
           .
         </p>
@@ -18,7 +18,7 @@ export function Footer() {
           <div className="text-center hidden md:block">
             <Link
               className="font-semibold"
-              href="https://www.rubixstudios.com.au"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
             >

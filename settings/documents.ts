@@ -78,6 +78,10 @@ export const Documents: Paths[] = [
           }
         ]
       },
+      {
+        title: "Level 1",
+        href: "/level1",
+      },
     ],
   },
   {
